@@ -46,8 +46,8 @@
             <td colspan="2"><xsl:value-of select="author"/></td>
             <td colspan="2"><img src="{picture@src}"/></td>
           </tr>
+        </xsl:for-each>
       </table>
     </xsl:for-each>
-  </xsl:for-each>
   </xsl:template>
 </xsl:stylesheet>
