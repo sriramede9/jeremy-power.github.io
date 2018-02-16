@@ -1,7 +1,7 @@
 <?xml version="1.0" standalone="no"?>
 <!-- bookstore.xml             -->
 <!DOCTYPE bookstore SYSTEM "bookstore.dtd">
-<?xml-stylesheet type="text/html" href="bookstore.xsl"?>
+<?xml-stylesheet type="text/xsl" href="bookstore.xsl"?>
 <bookstore>
   <name>Durham College Bookstore</name>
   <address>2000 Simcoe St. N.</address>
