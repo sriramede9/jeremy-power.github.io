@@ -44,7 +44,7 @@
             <td><xsl:value-of select="price/@usd"/></td>
             <td colspan="2"><xsl:value-of select="publisher"/></td>
             <td colspan="2"><xsl:value-of select="author"/></td>
-            <td colspan="2"><img src="{picture@src}"</td>
+            <td colspan="2"><img src="{picture@src}"/></td>
           </tr>
       </table>
     </xsl:for-each>
