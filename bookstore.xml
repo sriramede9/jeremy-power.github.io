@@ -1,0 +1,39 @@
+<?xml version="1.0" standalone="no"?>
+<!-- bookstore.xml             -->
+<!DOCTYPE bookstore SYSTEM "bookstore.dtd">
+<?xml-stylesheet type="text/xsl" href="bookstore.xsl"?>
+<bookstore>
+  <name>Durham College Bookstore</name>
+  <address>2000 Simcoe St. N.</address>
+  <logo src="images/durham_logo.png"/>
+  <email>info@durhamcollege.ca</email>
+  <phone>905-721-2000</phone>
+  <book bookid="23642346">
+    <booktitle>Harry Potter and the Philosopher's Stone</booktitle>
+    <price cad="$19.99" usd="$14.99"/>
+    <publisher>Bloomsbury</publisher>
+    <author>JK Rowling</author>
+    <picture src="images/potter.jpg"/>
+  </book>
+  <book bookid="136246346">
+    <booktitle>The Lion the Witch and the Wardrobe</booktitle>
+    <price cad="$23.99" usd="$17.99"/>
+    <publisher>HarperCollins</publisher>
+    <author>CS Lewis</author>
+    <picture src="images/narnia.jpg"/>
+  </book>
+  <employee employeeid="0001">
+    <employeename first="Jeremy" middle="Reginald" last="Power"/>
+    <dateemployed>01/22/2018</dateemployed>
+    <hourlyrate>$15.00</hourlyrate>
+    <empemail>jeremy.power@dcmail.ca</empemail>
+    <empphone>905-555-1234</empphone>
+  </employee>
+  <employee employeeid="0002">
+    <employeename first="Bob" middle="" last="Saget"/>
+    <dateemployed>01/02/2018</dateemployed>
+    <hourlyrate>$16.00</hourlyrate>
+    <empemail>bob@dcmail.ca</empemail>
+    <empphone>905-555-4124</empphone>
+  </employee>
+</bookstore>
