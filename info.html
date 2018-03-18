@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css" />
+
+<head>
+  <title>MODE In-Class</title>
+</head>
+
+<style>
+video {
+    width: 100%;
+    height: auto;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+</style>
+
+<body>
+  <div class="w3-container w3-gray">
+    <h1>
+      Info Page:
+    </h1>
+  </div>
+    <div class="w3-container w3-light-green">
+      <div class="w3-container w3-sand w3-center" style="width:50%;margin:auto;">
+        <section>
+          <article>
+            <header>
+              <h2>Lego</h2>
+            </header>
+            <p>Lego is a line of plastic construction toys that are manufactured by The Lego Group, a privately held company based in Billund, Denmark. The company's flagship product, Lego, consists of colourful interlocking plastic bricks accompanying an array of gears, figurines called minifigures, and various other parts. Lego pieces can be assembled and connected in many ways, to construct objects; vehicles, buildings, and working robots. Anything constructed can then be taken apart again, and the pieces used to make other objects. </p>
+            <br/>
+
+            <video src="./small.mp4" controls></video>
+          </article>
+          <article>
+          <header>
+            <h2>Sourdough Bread</h2>
+          </header>
+          <p>Sourdough bread is made by the fermentation of dough using naturally occurring lactobacilli and yeast. Sourdough bread has a mildly sour taste not present in most breads made with baker's yeast and better inherent keeping qualities than other breads, due to the lactic acid produced by the lactobacilli.</p>
+          <br/>
+          <iframe width="50%" height="315"
+            src="https://www.youtube.com/embed/oidnwPIeqsI">
+          </iframe>
+          <br/>
+          </article>
+          <article>
+            <header>
+              <h2>Amy</h2>
+            </header>
+            <p>
+              Amy is a female given name, sometimes short for Amelia or Amita. In French, the name is spelled "Aime", which means "beloved".
+            </p>
+            <br/>
+              <audio src="AmyCrushing.mp3"controls preload></audio>
+          </article>
+            <header>
+              <h2>Middle Ages</h2>
+            </header>
+            <img src="https://cdn.history.com/sites/2/2013/11/middle-ages-stained-glass-window-H.jpeg"/>
+            <p>
+              In the history of Europe, the Middle Ages (or Medieval Period) lasted from the 5th to the 15th century. It began with the fall of the Western Roman Empire and merged into the Renaissance and the Age of Discovery. The Middle Ages is the middle period of the three traditional divisions of Western history: classical antiquity, the medieval period, and the modern period. The medieval period is itself subdivided into the Early, High, and Late Middle Ages.
+            </p>
+          <article>
+test
+          </article>
+          </section>
+
+            <footer style="background-color: gray;" id="footer">
+               	Jeremy Power&copy;
+                <a href="http://facebook.com">Facebook</a>
+                <a href="http://twitter.com">Twitter</a>
+                <a href="http://instagram.com">Instagram</a>
+                <a href="http://linkedin.com">LinkedIn</a>
+                <a href="http://youtube.com">YouTube</a>
+            </footer>
+
+            <script>
+            var d = new Date();
+            document.getElementById("footer").innerHTML += d.toDateString();
+            </script>
+      </div>
+    </div>
+</body>
