@@ -4,8 +4,6 @@
         <link rel="stylesheet"
         href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/vs2015.min.css">
         <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
-        <link rel="stylesheet"
         href="./css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet"> 
         <title>Kindred Wiki</title>
@@ -23,7 +21,7 @@ mysql-server_5.7.29 100%[===================>] 221.20M  4.80MB/s    in 50s
 
 2020-03-31 00:05:15 (4.44 MB/s) - ‘mysql-server_5.7.29-1ubuntu16.04_amd64.deb-bundle.tar’ saved [231946240/231946240]</code></pre>
 
-    <p></p>The second step is to untar the bundle of deb files.</p>
+    <p>The second step is to untar the bundle of deb files.</p>
     <pre><code class="shell hljs">$ tar -xvf mysql-server_5.7.29-1ubuntu16.04_amd64.deb-bundle.tar 
 mysql-common_5.7.29-1ubuntu16.04_amd64.deb
 libmysqld-dev_5.7.29-1ubuntu16.04_amd64.deb
@@ -97,18 +95,5 @@ innodb_strict_mode = OFF
     </body>
 </html>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
-<script>
-// clipboard js init function
-(function(){
-    new Clipboard('.code');
-})();
-
-// toastr function
-$(".code").click(function() {
-	toastr.options.positionClass = "toast-top-center";
-	toastr.success('&nbsp; &nbsp; Copied to the clipboard');
-});
-</script>
