@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet"
+        href="./css/vs2015.css">
+        <link rel="stylesheet"
+        href="./css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet"> 
+        <title>Kindred Wiki</title>
+
+        <script src="./js/highlight.pack.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+    </head>
+    <body>
+    <h2>Installing ActiveMQ 5.15.8</h2>
+   
+
+    <p>The first step is to download the appropriate debian packages for ActiveMQ 5.15.8
+    </p>
+        <pre><code class="shell hljs">$ sudo wget http://archive.apache.org/dist/activemq/5.15.8/apache-activemq-5.15.8-bin.tar.gz
+            [sudo] password for sri: 
+            --2020-03-31 14:38:20--  http://archive.apache.org/dist/activemq/5.15.8/apache-activemq-5.15.8-bin.tar.gz
+            Resolving archive.apache.org (archive.apache.org)... 163.172.17.199
+            Connecting to archive.apache.org (archive.apache.org)|163.172.17.199|:80... connected.
+            HTTP request sent, awaiting response... 200 OK
+            Length: 58561031 (56M) [application/x-gzip]
+            Saving to: ‘apache-activemq-5.15.8-bin.tar.gz’
+            
+            apache-activemq-5.1 100%[===================>]  55.85M  13.6MB/s    in 4.4s    
+            
+            2020-03-31 14:38:24 (12.7 MB/s) - ‘apache-activemq-5.15.8-bin.tar.gz’ saved [58561031/58561031]
+            </code></pre>
+
+    <p>The second step is to untar the bundle of deb files.</p>
+    <pre><code class="shell hljs">$ tar -zxvf apache-activemq-5.15.8-bin.tar.gz 
+
+        </code></pre>
+    <p>Next you need to create an activemq user and activemq group</p>
+    <pre><code class="shell hljs">$ sudo addgroup activemq</code></pre>
+    <pre><code class="shell hljs">$ sudo adduser --ingroup activemq activemq</code></pre>
+    <p>Next, run the following command to install each element of MySQL Community Server in consecutive order.</p>
+    <pre><code class="shell hljs">activemq password : abcd1234</code></pre>
+    <p>Changing ownerships accordingly</p>
+    <pre><code class="shell hljs">$ sudo chown activemq:activemq -R apache-activemq-5.15.8</code></pre>
+    <p>create a link to the activemq directory</p>
+    <pre><code class="shell hljs">$ sudo ln -s /opt/apache-activemq-5.15.8 /opt/activemq
+</code></pre>
+<p>Set up environment variables</p>
+<pre><code class="shell hljs">$ $ cd /etc/profile.d/
+    $ sudo nano activemq.sh
+</code></pre>
+
+<p>Paste the following configuration in activemq.sh:</p>
+
+<p>Make the script executable by typing:
+    sudo chmod +x /etc/profile.d/activemq.sh
+    
+    Finally load the environment variables using the following command:
+    </p>
+<pre><code class="shell hljs">$ source /etc/profile.d/activemq.sh
+</code></pre>
+
+<p>
+Start ActiveMQ:
+</p>
+<pre><code class="shell hljs">
+$ bin\activemq start
+$ bin\activemq stop
+</code></pre>
+
+
+<p>
+ActiveMQ's default port is: 61616
+</p>
+<pre><code class="shell hljs">
+netstat -an | grep 61616
+</code></pre>
+
+<a href="http://localhost:8161/admin"> activemq Admin url is </a>
+
+<p>http://localhost:8161/admin is the active mq admin url</p>
+
+<p>
+ActiveMQ's default port is 61616
+
+user/passd: admin/admin
+</p>
+
+    </body>
+</html>
